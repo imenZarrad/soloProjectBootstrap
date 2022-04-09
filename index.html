@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Maths Game for Kids</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen and (min-width: 769px)" />
+    
+  </head>
+
+  <body>
+    <main>
+      <p><button type="button" onClick="controller.addDigit(7)">7</button>&emsp;&emsp;
+        <button type="button" onClick="controller.addDigit(8)">8</button>&emsp;&emsp;
+        <button type="button" onClick="controller.addDigit(9)">9</button>&emsp;&emsp;
+      </p><br><br>
+      <p>
+        <button type="button" onClick="controller.addDigit(4)">4</button>&emsp;&emsp;
+        <button type="button" onClick="controller.addDigit(5)">5</button>&emsp;&emsp;
+        <button type="button" onClick="controller.addDigit(6)">6</button>&emsp;&emsp;
+      </p><br><br>
+      <p>
+        <button type="button" onClick="controller.addDigit(1)">1</button>&emsp;&emsp;
+        <button type="button" onClick="controller.addDigit(2)">2</button>&emsp;&emsp;
+        <button type="button" onClick="controller.addDigit(3)">3</button>&emsp;&emsp;
+      </p><br><br>
+      <p>
+        <button type="button" onClick="controller.addDigit(0)">0</button>&emsp;&emsp;&emsp;&emsp;
+        <span id="calculate-button" class="calculate-span">
+        <button type="button" onClick="controller.submitAnswer()" class="half-size">DONE</button>
+      </span><br><br>
+        <span id="start-button">
+          <button type="button" onClick="controller.startGame(10)" class="half-size">START</button>
+        </span>
+      </p>
+
+      <div class="message">
+        <h1 id="game-message">&nbsp;</h1>
+        <h1 id="points">Points: 0</h1>
+      </div>
+
+      <div class="question">
+        <h1 id="question">?</h1>
+      </div>
+      <textarea id="textbox"></textarea>
+
+      <img src="images/image.jpg" alt="image" title="imagekids">
+
+    </main>
+    <script src="main.js"></script>
+
+  </body>
+</html>
